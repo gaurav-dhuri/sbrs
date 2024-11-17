@@ -1,0 +1,7 @@
+Flask
+gunicorn
+nltk
+numpy
+pandas
+regex
+scikit-learn

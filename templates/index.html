@@ -1,0 +1,25 @@
+<h1><font color='blue'/>Capstone Project</h2>
+    <h2><font color='purple'/>Sentiment Based Product Recommendation System</h2>
+    <font color='black'/>
+    <p><b>Usage of the tool:</b><br>
+        Please enter username in the below textbox and the Sentiment Based Product Recommendation System will output the top5 recommendations for next purchase of the user.
+    </p>
+    <form action="/" method = "POST">
+        <p>UserName <input type = "text" name = "UserName" /></p>
+        <p><input type = "submit" value = "Submit" /></p>
+    </form>
+    
+    
+    {% if product_name_list %}
+        <p>Your recommended list = </p> <font color='green'/> 
+        <ul>
+            {% for product in product_name_list %}
+              <li>{{ product }}</li>
+            {% endfor %}  
+        </ul>
+    {% endif %}
+    
+    {% if message %}
+        <div class="alert alert" role="alert">{{message}}</div>
+    {% endif %}
+    
