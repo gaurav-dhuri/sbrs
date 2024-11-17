@@ -9,8 +9,7 @@ import warnings
 warnings.simplefilter("ignore")
 
 def get_user_recommendations(username):
-    path = 'D:/AI-ML/EPG - AIML/Capstone/SBRS/'
-    directory = os.path.join(path, 'pickle/')
+    directory = os.path.join(os.path.dirname(__file__), 'pickle/')
 
     # load user final ratings
     with open(os.path.join(directory,USER_FINAL_RATING), 'rb') as f:

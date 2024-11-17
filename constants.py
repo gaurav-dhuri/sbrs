@@ -1,4 +1,4 @@
-DATA_FILE_LOC = 'https://github.com/rgarudadri/Capstone_SentimentBased_ProductRecommendationSystem/blob/master/sample30.csv'
+DATA_FILE_LOC = 'https://github.com/gaurav-dhuri/sbrs/blob/main/sample30.csv'
 PREPROCESSED_DATA = 'preprocessed-data.pkl'
 VECTORIZER = 'count_vector.pkl'
 USER_FINAL_RATING =  'user_final_rating.pkl'
